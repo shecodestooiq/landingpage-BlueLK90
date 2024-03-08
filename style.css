@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(233, 238, 238);
+    font-family: Helvetica, sans-serif;
+    margin: 15px 20px 30px 20px;
+    display: grid;
+    justify-content: center;
+    grid-template: 2fr auto 1fr/ 2fr 1fr ;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+.headerSec {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.headerImg {
+    text-align: center;
+}
+.navBar a {
+    text-decoration: none;
+    color: rgb(226, 223, 223);
+}
+.navBar a:hover {
+    text-decoration: none;
+    color: rgb(31, 158, 141);
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    background-color: rgb(37, 37, 37);
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 90%;
+}
+.headerSec .banner {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: -5px;
+    }
+
+.catagoriesCards {
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-bottom: 100px;
+}
+.catCard {
+    display: block;
+    text-align: center;
+    width: 350px;
+}
+.catCard img {
+    display: block;
+    padding: 10px;
+}
+.catCard a {
+    text-decoration: none;
+    color: rgb(5, 48, 42);
+}
+.catCard p {
+    text-align: justify;
+    padding-top: 8px;
+    text-indent: 5px;
+}
+
+
+.footerSec {
+    grid-area: footer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(205, 240, 240);
+    align-items: center;
+}
+.footerSec p {
+    text-wrap: wrap;
+    font-size: large; 
+}
+.footerSec img {
+    width: 75%;
+}
+
